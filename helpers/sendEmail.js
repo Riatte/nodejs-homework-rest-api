@@ -1,10 +1,7 @@
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
-const {
-  GMAIL_NET_EMAIL = "varvara.babich13@gmail.com",
-  GMAIL_NET_PASSWORD = "0465553BC839894C8D9FE0DC9517F8F9AFA1",
-} = process.env;
+const { GMAIL_NET_EMAIL, GMAIL_NET_PASSWORD } = process.env;
 
 const nodemailerConfig = {
   host: "smtp.elasticemail.com",

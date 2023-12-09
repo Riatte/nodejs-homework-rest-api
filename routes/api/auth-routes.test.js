@@ -3,11 +3,7 @@ const moongoose = require("mongoose");
 const request = require("supertest");
 const User = require("../../models/user");
 
-const {
-  DB_HOST = "mongodb+srv://deja:deja@cluster0.5qfinaf.mongodb.net/?retryWrites=true&w=majority",
-  PORT = 3000,
-  DB_NAME = "db-contacts",
-} = process.env;
+const { DB_HOST, PORT, DB_NAME } = process.env;
 
 describe("test login route", () => {
   let server = null;
