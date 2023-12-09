@@ -3,6 +3,7 @@ const HttpError = require("./HttpError");
 const validateRequestBody = require("./validateRequestBody");
 const handleMongooseError = require("./handleMongooseError");
 const validateRequestBodyFav = require("./validateRequestBodyFav");
+const sendEmail = require("./sendEmail");
 
 module.exports = {
   HttpError,
@@ -10,4 +11,5 @@ module.exports = {
   validateRequestBody,
   handleMongooseError,
   validateRequestBodyFav,
+  sendEmail,
 };
