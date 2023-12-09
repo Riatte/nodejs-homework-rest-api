@@ -12,6 +12,14 @@ router.post(
   authController.singup
 );
 
+router.get("/verify/:verificationToken", authController.verify);
+
+router.post(
+  "/verify",
+  validateBody(shemas.userEmailShema),
+  authController.resendVerify
+);
+
 router.post(
   "/login",
   validateBody(shemas.userLoginShema),
